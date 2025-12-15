@@ -69,3 +69,11 @@ print(t3) # tuple을 합친게 아니고 재정의 함.
 t4 = t2 * 2
 print(t4)
 print(len(t1))
+
+
+
+
+
+
+
+

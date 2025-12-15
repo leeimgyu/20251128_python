@@ -16,6 +16,7 @@ print("{:X}".format(11)) # 십육진수 B출력
 print("{:c}".format(65))
 print("{:s}".format(chr(97)))
 print("{:c}".format(ord('a')))
+print("{:s}".format(ascii('a')))
 print("{:s}".format("Hello"))
 a = 10
 print(a, type(a))

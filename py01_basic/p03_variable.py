@@ -127,8 +127,11 @@ print(a.real, a.imag)
 print(f"{"None":=^20}")
 print(type(None), None)
 print('' == None)
+word = None
+print(word)  # None
 a = None
 a: int | None  # Python 3.10 이상
+print(a) # None
 a = True
 print(a, type(a))
 
@@ -148,6 +151,7 @@ print("bool 형변환함수 bool(None)", bool(None))
 print("str 형변환함수 str(None)", str(None))
 print("str 형변환함수 str(97)", str(97))
 print("chr 형변환함수 chr(97)", chr(97))
+print("ord 형변환함수 ord('a')", ord('a'))
 try:
   b = int("a10")  # 문자열, 수치자료를 int type 변경
   b = float("a0.12")  # 문자열, 수치자료를 float type 변경
@@ -157,12 +161,13 @@ except:
 string = "abc123def456"
 number_string = ""
 for char in string:
-    if char.isdigit():  # isdigit : 숫자인지 확인함
+    if char.isdigit():
         number_string += char
 number = int(number_string)
 print(number, type(number)) # 출력: 123456
 
 a="A";
+print(a, type(a))
 print(ascii(a), end=' '); print(str(a), end=' '); print(ord(a));
 a=65;
 # chr()는 매개변수가 숫자여야만 함.
@@ -185,7 +190,5 @@ print(const.PI)
 
 # 에러 발생. 재할당이 안됨.
 # const.PI = 3.141592
-# print(const.PI)
 
-word = None
-print(word)
+
